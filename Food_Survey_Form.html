@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        label {
+            margin-right: 20px;
+            display: inline-block;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select,
+        textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            margin: 2px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+        }
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <h1>Food Preferences Survey</h1>
+    <h5>Please help us understand your food preferences by filling out this short survey.</h5>
+
+    <form action="#" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2">Your Personal Information</th>
+                </tr>
+                <tr>
+                    <td><label for="user">Full Name:</label></td>
+                    <td><input type="text" id="user" name="user" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age" min="10" max="100"></td>
+                </tr>
+                <tr>
+                    <td><label>Location:</label></td>
+                    <td>
+                        <input type="radio" id="loc_urban" name="location" value="urban"><label for="loc_urban">Urban</label>
+                        <input type="radio" id="loc_suburban" name="location" value="suburban"><label for="loc_suburban">Suburban</label>
+                        <input type="radio" id="loc_rural" name="location" value="rural"><label for="loc_rural">Rural</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Meal Preparation Habits</th>
+                </tr>
+                <tr>
+                    <td><label>You prepare your own meals:</label></td>
+                    <td>
+                        <input type="radio" id="prep_daily" name="you_prepare" value="daily"><label for="prep_daily">Daily</label>
+                        <input type="radio" id="prep_few_times_week" name="you_prepare" value="few_times_week"><label for="prep_few_times_week">Few times/week</label>
+                        <input type="radio" id="prep_once_week" name="you_prepare" value="once_week"><label for="prep_once_week">Once/week</label>
+                        <input type="radio" id="prep_rarely" name="you_prepare" value="rarely"><label for="prep_rarely">Rarely</label>
+                        <input type="radio" id="prep_never" name="you_prepare" value="never"><label for="prep_never">Never</label>
+                        <input type="radio" id="prep_na" name="you_prepare" value="na"><label for="prep_na">N/A</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>You eat out:</label></td>
+                    <td>
+                        <input type="radio" id="eatout_daily" name="you_eat_out" value="daily"><label for="eatout_daily">Daily</label>
+                        <input type="radio" id="eatout_few_times_week" name="you_eat_out" value="few_times_week"><label for="eatout_few_times_week">Few times/week</label>
+                        <input type="radio" id="eatout_once_week" name="you_eat_out" value="once_week"><label for="eatout_once_week">Once/week</label>
+                        <input type="radio" id="eatout_rarely" name="you_eat_out" value="rarely"><label for="eatout_rarely">Rarely</label>
+                        <input type="radio" id="eatout_never" name="you_eat_out" value="never"><label for="eatout_never">Never</label>
+                        <input type="radio" id="eatout_na" name="you_eat_out" value="na"><label for="eatout_na">N/A</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>You order food for home:</label></td>
+                    <td>
+                        <input type="radio" id="order_daily" name="you_order_food" value="daily"><label for="order_daily">Daily</label>
+                        <input type="radio" id="order_few_times_week" name="you_order_food" value="few_times_week"><label for="order_few_times_week">Few times/week</label>
+                        <input type="radio" id="order_once_week" name="you_order_food" value="once_week"><label for="order_once_week">Once/week</label>
+                        <input type="radio" id="order_rarely" name="you_order_food" value="rarely"><label for="order_rarely">Rarely</label>
+                        <input type="radio" id="order_never" name="you_order_food" value="never"><label for="order_never">Never</label>
+                        <input type="radio" id="order_na" name="you_order_food" value="na"><label for="order_na">N/A</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Food Preferences</th>
+                </tr>
+                <tr>
+                    <td><label>Food origin preference:</label></td>
+                    <td>
+                        <input type="checkbox" id="origin_local" name="food_origin_preference" value="local"><label for="origin_local">Local</label><br>
+                        <input type="checkbox" id="origin_organic" name="food_origin_preference" value="organic"><label for="origin_organic">Organic</label><br>
+                        <input type="checkbox" id="origin_imported" name="food_origin_preference" value="imported"><label for="origin_imported">Imported</label><br>
+                        <input type="checkbox" id="origin_fairtrade" name="food_origin_preference" value="fairtrade"><label for="origin_fairtrade">Fair Trade</label><br>
+                        <input type="checkbox" id="origin_sustainable" name="food_origin_preference" value="sustainable"><label for="origin_sustainable">Sustainable</label><br>
+                        <input type="checkbox" id="origin_gmo_free" name="food_origin_preference" value="gmo_free"><label for="origin_gmo_free">GMO-Free</label><br>
+                        <input type="checkbox" id="origin_pasture_raised" name="food_origin_preference" value="pasture_raised"><label for="origin_pasture_raised">Pasture-Raised</label><br>
+                        <input type="checkbox" id="origin_wild_caught" name="food_origin_preference" value="wild_caught"><label for="origin_wild_caught">Wild-Caught</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Would you go vegan:</label></td>
+                    <td>
+                        <input type="radio" id="vegan_yes" name="vegan" value="yes"><label for="vegan_yes">Yes</label>
+                        <input type="radio" id="vegan_no" name="vegan" value="no"><label for="vegan_no">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dietary_preference">Dietary Preference:</label></td>
+                    <td>
+                        <select id="dietary_preference" name="dietary_preference">
+                            <option value="none">None</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="gluten_free">Gluten-Free</option>
+                            <option value="pescatarian">Pescatarian</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Are you allergic to any of the following?</label></td>
+                    <td>
+                        <input type="checkbox" id="allergy_dairy" name="allergies" value="dairy"><label for="allergy_dairy">Dairy</label><br>
+                        <input type="checkbox" id="allergy_nuts" name="allergies" value="nuts"><label for="allergy_nuts">Nuts</label><br>
+                        <input type="checkbox" id="allergy_shellfish" name="allergies" value="shellfish"><label for="allergy_shellfish">Shellfish</label><br>
+                        <input type="checkbox" id="allergy_soy" name="allergies" value="soy"><label for="allergy_soy">Soy</label><br>
+                        <input type="checkbox" id="allergy_gluten" name="allergies" value="gluten"><label for="allergy_gluten">Gluten</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>What is your favorite type of cuisine?</label></td>
+                    <td>
+                        <input type="radio" id="cuisine_italian" name="favorite_cuisine" value="italian"><label for="cuisine_italian">Italian</label><br>
+                        <input type="radio" id="cuisine_mexican" name="favorite_cuisine" value="mexican"><label for="cuisine_mexican">Mexican</label><br>
+                        <input type="radio" id="cuisine_indian" name="favorite_cuisine" value="indian"><label for="cuisine_indian">Indian</label><br>
+                        <input type="radio" id="cuisine_chinese" name="favorite_cuisine" value="chinese"><label for="cuisine_chinese">Chinese</label><br>
+                        <input type="radio" id="cuisine_other" name="favorite_cuisine" value="other"><label for="cuisine_other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="favorite_dish">What is your favorite dish?</label></td>
+                    <td><input type="text" id="favorite_dish" name="favorite_dish"></td>
+                </tr>
+                <tr>
+                    <td><label for="suggestions">Any additional comments or suggestions regarding food?</label></td>
+                    <td><textarea id="suggestions" name="suggestions" rows="5" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit Survey</button>
+                        <button type="reset">Reset Form</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <hr>
+    <footer>
+        <p>&copy; 2025 Food Survey</p>
+    </footer>
+</body>
+</html>
