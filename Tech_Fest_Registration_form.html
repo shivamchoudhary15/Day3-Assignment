@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam</title>
+</head>
+<body>
+    <!-- Main Container -->
+    <div>
+        <!-- Header Section -->
+        <header>
+            <h1>Tech Fest Registration Form</h1>
+            <p><strong>Please fill out the form below to register.</strong></p>
+        </header>
+
+        <!-- Registration Form Section -->
+        <section>
+            <form action="#" method="POST">
+                <!-- Name Input -->
+                <div>
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <br><br></div>
+
+                <!-- Email Input -->
+                <div>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                <br><br></div>
+
+                <!-- Password Input -->
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                <br><br></div>
+
+                <!-- Country Dropdown -->
+                <div>
+                    <label for="country" >Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="india">India</option>
+                        <option value="germany">Germany</option>
+                    </select>
+                <br><br></div>
+
+                <!-- Gender Radio Buttons -->
+                <div>
+                    <span>Gender</span>
+                    <div >
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            <span>Male</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">
+                            <span >Female</span>
+                        </label>
+                        <label >
+                            <input type="radio" name="gender" value="other" >
+                            <span>Other</span>
+                        </label>
+                    <br><br></div>
+                </div>
+
+                <!-- Interests Checkboxes -->
+                <div>
+                    <span>Interests</span>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="interests" value="sports">
+                            <span>Sports</span>
+                        </label>
+                        <label >
+                            <input type="checkbox" name="interests" value="reading">
+                            <span>Reading</span>
+                        </label>
+                        <label >
+                            <input type="checkbox" name="interests" value="coding">
+                            <span>Coding</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="interests" value="travel">
+                            <span>Travel</span>
+                        </label>
+                    </div><br><br>
+                </div>
+
+                <!-- About Me Textarea -->
+                <div>
+                    <label for="about">About Me (Optional)</label>
+                    <textarea id="about" name="about" rows="4" placeholder="Tell us a little about yourself..."></textarea>
+                <br><br></div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">
+                        Register Now
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Footer Section -->
+        <footer >
+            <p>&copy; 2025 My Web Page. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
